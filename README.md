@@ -1,5 +1,5 @@
 # designkit-tooltips
-1.0.0
+1.0.1
 
 A Sass module for tooltips used in RightScale apps.
 

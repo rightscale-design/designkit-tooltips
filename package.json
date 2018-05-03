@@ -1,6 +1,6 @@
 {
   "name": "designkit-tooltips",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Sass module for tooltips used in RightScale apps.",
   "homepage": "https://github.com/rightscale-design/designkit-tooltips#readme",
   "repository": {
