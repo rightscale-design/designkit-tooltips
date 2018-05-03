@@ -30,7 +30,7 @@
     "src/index.scss"
   ],
   "scss": "src/_designkit-tooltips.scss",
-  "main": "dist/designkit-tooltips.min.css",
+  "main": "dist/designkit-tooltips.css",
   "browserslist": [
     "> 1%",
     "last 2 versions"
