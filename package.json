@@ -1,0 +1,59 @@
+{
+  "name": "designkit-tooltips",
+  "version": "1.0.0",
+  "description": "A Sass module for tooltips used in RightScale apps.",
+  "homepage": "https://github.com/rightscale-design/designkit-tooltips#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rightscale-design/designkit-tooltips.git"
+  },
+  "author": {
+    "name": "Jason Melgoza"
+  },
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "css",
+    "styles"
+  ],
+  "bugs": {
+    "url": "https://github.com/rightscale-design/designkit-tooltips/issues"
+  },
+  "files": [
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "dist/designkit-tooltips.css",
+    "dist/designkit-tooltips.min.css",
+    "src/_designkit-tooltips.scss",
+    "src/index.scss"
+  ],
+  "scss": "src/_designkit-tooltips.scss",
+  "main": "dist/designkit-tooltips.min.css",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "csso": "^3.5.0",
+    "designkit-colors": "^1.1.0",
+    "lodash": "^4.17.10",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.3",
+    "npm-run-all": "^4.1.2",
+    "serve": "^6.5.6"
+  },
+  "scripts": {
+    "start": "npm run build:serve",
+    "serve": "serve docs/ -o",
+    "watch": "nodemon -e scss -x 'npm run build:all'",
+    "build:scss": "node ./scripts/scss.js",
+    "build:prefix": "node ./scripts/postcss.js",
+    "build:docs": "node ./scripts/docs.js",
+    "build:readme": "node ./scripts/readme.js",
+    "build:all": "npm run build:scss && npm run build:prefix && npm run build:docs",
+    "build:serve": "run-p watch serve"
+  }
+}
